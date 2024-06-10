@@ -9,9 +9,14 @@
     <body>
         <main class="mother">
             <div class="form1">
-                <input type="text" value="seu nome"><br>
-                <input type="number" value=""><br>
-                <input type="number" value="">
+                <label for="nome">Nome</label>
+                <input id="nome" name="valor" type="text" value=""><br>
+                <label for="H/a">Duração Aula</label>
+                <input id="h/a" name="H/a" type="number" value=""><br>
+                <label for="horas">Aulas Semanais</label>
+                <input id="hr" name="horas" type="number" value=""><br><br>
+                <button id="btncalc" onclick="Calcular()">Calcular</button>
+                <p id="ptotal">Total Geral: <input type="text" id="txtalt" value=""></p>
             </div>
         </main>
         <script src="js/index.js"></script>
